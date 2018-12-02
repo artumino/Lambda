@@ -363,6 +363,7 @@ function GM:EntityFireBullets(ent, data)
         self:MetricsRegisterBullet(ent, data.Num)
     end
 
+    --[[
     if ent:IsPlayer() or ent:IsNPC() then
 
         -- We have to assume its fired by the weapon.
@@ -408,7 +409,8 @@ function GM:EntityFireBullets(ent, data)
         end
 
     end
-
+    ]]
+    
     -- We will add a callback to handle water bullets.
     local prevCallback = data.Callback
     local newData = { Dir = data.Dir, Src = data.Src }
