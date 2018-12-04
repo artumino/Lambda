@@ -172,6 +172,8 @@ function GM:EntityTakeDamage(target, dmginfo)
 
     local DbgPrint = DbgPrintDmg
 
+    debugoverlay.Cross(dmginfo:GetDamagePosition(), 2, 1, Color( 255, 0, 0 ), true)
+
     local attacker = dmginfo:GetAttacker()
     local inflictor = dmginfo:GetInflictor()
     local targetClass = target:GetClass()
