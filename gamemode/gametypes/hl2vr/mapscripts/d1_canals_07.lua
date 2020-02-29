@@ -8,10 +8,13 @@ MAPSCRIPT.DefaultLoadout =
 {
     Weapons =
     {
-        "weapon_lambda_medkit",
+        "weapon_medkit",
+        "weapon_fists",
         "weapon_crowbar",
-        "weapon_pistol",
-        "weapon_smg1",
+        "arcticvr_hl2mmod_pistol",
+        "arcticvr_m9",
+        "arcticvr_glock",
+        "arcticvr_hl2mmod_smg1",
     },
     Ammo =
     {

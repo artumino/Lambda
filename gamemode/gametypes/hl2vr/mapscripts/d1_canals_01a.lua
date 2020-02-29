@@ -8,9 +8,12 @@ MAPSCRIPT.DefaultLoadout =
 {
     Weapons =
     {
-        "weapon_lambda_medkit",
+        "weapon_medkit",
+        "weapon_fists",
         "weapon_crowbar",
-        "weapon_pistol",
+        "arcticvr_hl2mmod_pistol",
+        "arcticvr_m9",
+        "arcticvr_glock",
     },
     Ammo =
     {
@@ -81,7 +84,7 @@ function MAPSCRIPT:PostInit()
         npcMaker1:SetPos(Vector(-2174.593262, 9086.971680, 288.031250))
         npcMaker1:SetAngles(Angle(0, 180, 0))
         npcMaker1:SetKeyValue("NPCType", "npc_metropolice")
-        npcMaker1:SetKeyValue("additionalequipment", "weapon_pistol")
+        npcMaker1:SetKeyValue("additionalequipment", "arcticvr_hl2mmod_pistol")
         npcMaker1:SetKeyValue("MaxNPCCount", "4")
         npcMaker1:SetKeyValue("MaxLiveChildren", "4")
         npcMaker1:SetKeyValue("StartDisabled", "1")
@@ -93,7 +96,7 @@ function MAPSCRIPT:PostInit()
         npcMaker2:SetAngles(Angle(0, 180, 0))
         npcMaker2:SetKeyValue("spawnflags", SF_NPCMAKER_HIDEFROMPLAYER + SF_NPCMAKER_ALWAYSUSERADIUS)
         npcMaker2:SetKeyValue("NPCType", "npc_metropolice")
-        npcMaker2:SetKeyValue("additionalequipment", "weapon_pistol")
+        npcMaker2:SetKeyValue("additionalequipment", "arcticvr_hl2mmod_pistol")
         npcMaker2:SetKeyValue("MaxNPCCount", "2")
         npcMaker2:SetKeyValue("MaxLiveChildren", "2")
         npcMaker2:SetKeyValue("StartDisabled", "1")
@@ -160,7 +163,7 @@ function MAPSCRIPT:PostInit()
         npcMaker3:SetAngles(Angle(0, 180, 0))
         npcMaker3:SetKeyValue("spawnflags", SF_NPCMAKER_HIDEFROMPLAYER + SF_NPCMAKER_ALWAYSUSERADIUS)
         npcMaker3:SetKeyValue("NPCType", "npc_metropolice")
-        npcMaker3:SetKeyValue("additionalequipment", "weapon_pistol")
+        npcMaker3:SetKeyValue("additionalequipment", "arcticvr_hl2mmod_pistol")
         npcMaker3:SetKeyValue("MaxNPCCount", "8")
         npcMaker3:SetKeyValue("MaxLiveChildren", "2")
         npcMaker3:SetKeyValue("StartDisabled", "1")
@@ -176,7 +179,7 @@ function MAPSCRIPT:PostInit()
         npcMaker4:SetAngles(Angle(0, 180, 0))
         npcMaker4:SetKeyValue("spawnflags", SF_NPCMAKER_HIDEFROMPLAYER)
         npcMaker4:SetKeyValue("NPCType", "npc_metropolice")
-        npcMaker4:SetKeyValue("additionalequipment", "weapon_pistol")
+        npcMaker4:SetKeyValue("additionalequipment", "arcticvr_hl2mmod_pistol")
         npcMaker4:SetKeyValue("MaxNPCCount", "3")
         npcMaker4:SetKeyValue("MaxLiveChildren", "1")
         npcMaker4:SetKeyValue("StartDisabled", "1")

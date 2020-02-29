@@ -6,7 +6,9 @@ local MAPSCRIPT = {}
 MAPSCRIPT.PlayersLocked = false
 MAPSCRIPT.DefaultLoadout =
 {
-    Weapons = {},
+    Weapons = {
+        "weapon_fists"
+    },
     Ammo = {},
     Armor = 30,
     HEV = true,
@@ -122,7 +124,7 @@ function MAPSCRIPT:PostInit()
                 local loadout = GAMEMODE:GetMapScript().DefaultLoadout
                 loadout.HEV = true
                 table.insert(loadout.Weapons, "weapon_crowbar")
-                table.insert(loadout.Weapons, "weapon_lambda_medkit")
+                table.insert(loadout.Weapons, "weapon_medkit")
                 s:Remove()
             end
         end
@@ -156,7 +158,7 @@ function MAPSCRIPT:PostInit()
             headcrabMaker:Fire("Spawn")
         end)
 
-        local medkit = ents.Create("weapon_lambda_medkit")
+        local medkit = ents.Create("weapon_medkit")
         medkit:SetPos(Vector(-9653.991211, -3418.812256, 362.399658))
         medkit:SetAngles(Angle(0, -148.108, 0))
         medkit:Spawn()
